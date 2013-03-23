@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/javaswift.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
@@ -29,8 +30,8 @@
   <body>
     <header>
       <div class="inner">
-        <h1>Javaswift.github.com</h1>
-        <h2>Github pages for Java Swift</h2>
+        <h1>Javaswift</h1>
+        <h2>Collection of Java tools for Swift</h2>
         <a href="https://github.com/javaswift" class="button"><small>Follow me on</small>GitHub</a>
       </div>
     </header>
@@ -38,32 +39,60 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+          <p>
+              <img class="logo" src="images/javaswift-logo.png"/>
+              OpenStack Storage, also known as <a href="http://docs.openstack.org/developer/swift/">Swift</a>, is a fast-growing
+              and popular cloud-based storage solution originally developed by NASA.
+          </p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+          <p>
+              New technologies imply new challenges. Javaswift is a collaboration, originally started by
+              <a href="https://github.com/robert-bor">Robert Bor</a> and
+              <a href="https://github.com/ctrl-alt-dev">Erik Hooijmeijer</a> and blessed by the Java specialist
+              <a href="http://www.42.nl">42</a> to bring the benefits of Swift to the
+              Java community under an Apache open source license.
+          </p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+          <p>
+              Currently, Javaswift has two projects:
+              <ul>
+                <li><a href="#joss">JOSS</a>; Java library on top of the REST-based
+                    <a href="http://docs.openstack.org/api/openstack-object-storage/1.0/content/">Swift API</a></li>
+                <li><a href="#cloudie">Cloudie</a>; Graphical User Interface for viewing and manipulating Swift content</li>
+              </ul>
+          </p>
 
-<h3>Designer Templates</h3>
+          <h2 id="joss">JOSS</h2>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+          <p>
+              <img class="logo" src="images/joss-logo.png"/>
+              JOSS stands for Java OpenStack Storage. It is a Java library for Java OpenStack Storage, otherwise known
+              as Swift. JOSS allows you to speak natively to the Swift component and offers an intuitive interface for
+              Java developers.
+          </p>
 
-<h3>Rather Drive Stick?</h3>
+          <p>
+              JOSS is written with a strong preference for quality-driven development. It offers various tools to mock
+              Swift, including a full-fledged in-memory storage solution to simulate the actual Swift environment. It
+              is fairly easy to switch between these modes, allowing developers to focus on new functionality instead
+              of integration issues.
+          </p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+          <h2 id="cloudie">Cloudie</h2>
 
-<h3>Authors and Contributors</h3>
+          <p>
+              <img class="logo" src="images/cloudie-logo.png"/>
+              Cloudie is a very handy tool for accessing Swift content using a Graphical User Interface. It allows you
+              to login to a Swift account and browse the content, view its headers. You can change the containers and
+              upload new content. Cloudie has already proved its worth in a commercial project and can best be compared
+              to Windows Explorer for Swift.
+          </p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+          <p>
+              Under the hoofd, Cloudie uses the JOSS library to access Swift. It keeps in sync with the functionality
+              that JOSS offers.
+          </p>
         </section>
 
         <aside id="sidebar">
